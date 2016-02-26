@@ -8,7 +8,7 @@ int main() {
     cout << "Enter natural number: ";
     cin >> num;
 
-    for(int i = 3; i < num; i++) {
+    for(int i = 3; i <= num; i++) {
         if(i % 3 == 0 || i % 5 == 0) sum += i; cout << i << " " << sum << endl;
     }
 
