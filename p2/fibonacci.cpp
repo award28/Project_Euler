@@ -6,6 +6,7 @@ int main() {
     int lastFib = 1;
     int fib = 1;
     int newFib = 1;
+
     while(fib < 4000000) {
         lastFib = fib;
         fib = newFib;
