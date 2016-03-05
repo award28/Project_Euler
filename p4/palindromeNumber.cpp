@@ -27,9 +27,9 @@ string palindromicNumber(int num) {
         lowestNum = (lowestNum*10) +9;
     }
 
-    while(highestMultiples == "  " || numToTest > lowestNum) {
+    while(numToTest > lowestNum) {
         for(int i = numToTest; i > lowestNum; i--) {
-            if(isPalindrome(numToTest*i) && (numToTest + i) > (multiple1+multiple2) ) { 
+           if(isPalindrome(numToTest*i) && (numToTest + i) > (multiple1+multiple2) ) { 
                 multiple1 = numToTest;
                 multiple2 = i;
                 highestMultiples = (to_string(numToTest) + " " + to_string(i)) +
